@@ -10,7 +10,7 @@ def capitalOf():
     countryCapitalMapper = {}
 
     for each in lists:
-        countryCapitalMapper[each.b.string] = each.i.string
+        countryCapitalMapper[each.b.string.strip()] = each.i.string
     return countryCapitalMapper
 
 # User is asked for input and if it is a known country, capital is printed. Otherwise, capital is unknown.
